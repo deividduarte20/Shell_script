@@ -21,6 +21,10 @@
 #	- Inicio do programa
 #
 # -------------------------------------EXECUÇÃO-------------------------------#
+
+# Lynx instalar?
+[ ! -x "$(which lynx)" ] && printf "${AMARELO}Precisamos instalar o ${VERDE}Lynx${AMARELO}, por favor, digite sua senha:${SEM_COR}\n" && apt install lynx
+
 SITE=$(lynx -source https://mikrotik.com/download | grep "^.th" | cut -c 22-27)
 
 echo $SITE
