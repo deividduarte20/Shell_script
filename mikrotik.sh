@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
 #
 # mikrotik.sh - Verifica versão do mikrotik no site
