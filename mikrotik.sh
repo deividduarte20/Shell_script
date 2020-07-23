@@ -22,7 +22,7 @@
 #
 # -------------------------------------EXECUÇÃO-------------------------------#
 
-# Lynx instalar?
+# Lynx instalado?
 [ ! -x "$(which lynx)" ] && printf "${AMARELO}Precisamos instalar o ${VERDE}Lynx${AMARELO}, por favor, digite sua senha:${SEM_COR}\n" && apt install lynx
 
 SITE=$(lynx -source https://mikrotik.com/download | grep "[Ss]table" | cut -d \> -f7 | head -n1 | cut -c1-6)
