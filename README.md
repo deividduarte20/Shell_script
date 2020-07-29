@@ -24,18 +24,16 @@ $ sudo apt-get install -y lynx
 Downloads:
   
     Baixe os arqivos:
-      locaweb_status
-      locaweb.conf
-      template_locaweb_zabbix4.2.3.xml
+    mikrotik.sh 
 
 Configuração:
 
-Copie o arquivo de script locaweb_status para /usr/local/bin/
-Atribua permissão de execução com o comando: chmod +x locaweb_status
-Copie o arquivo de configuração do UserParameter locaweb_status para a pasta /etc/zabbix/zabbix_agentd.d/
+Copie o arquivo de script mikrotik para /usr/local/bin/
+Atribua permissão de execução com o comando: chmod +x mikrotik.sh
+Copie o arquivo de configuração do UserParameter mikrotik para a pasta /etc/zabbix/zabbix_agentd.d/
 
 Para testar se o script está funcionando basta executar o comando:
-  locaweb_status
+  mikrotik
 Se o comando executar e caso o status do serviço esteja disponível o retorno do comando será 1 se estiver indisponível retornará 0.
 
 Verifique a opção Timeout no arquivo /etc/zabbix/zabbix_agentd.conf e mude para Timeout=30.
